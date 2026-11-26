@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Calculator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        body {
+            background-color: #f7c62e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #27345f;
+        }
+
+        .calculator {
+            background-color: #f04450;
+            border: 8px solid #27345f;
+            border-radius: 20px;
+            padding: 10px;
+            width: 180px;
+        }
+
+        .display {
+            background-color: #ffdf16;
+            height: 65px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 10px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+        }
+
+        button {
+            background-color: #29375f;
+            color: white;
+            border: 1px solid #e34b55;
+            height: 48px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #455681;
+        }
+
+        .equal {
+            grid-column: span 2;
+        }
+
+        .bottom-line {
+        width: 500px;
+        border: 2px solid #27345f;
+        margin-top: 20px;
+        }
+
+        .created {
+        font-size: 16px;
+        color: #27345f;
+        text-align: center;
+        margin-top: 10px;
+        }
+
+        .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+        margin-top: 25px;
+        width: 100%;
+        }
+
+        .social-links a {
+        display: flex;
+        align-items: center;
+        color: #27345f;
+        text-decoration: none;
+        gap: 200px;
+        font-size: 20px;
+        }
+
+        .social-links i.fa-brands.fa-instagram {
+        font-size: 25px;
+        color: #e20bbe;
+        gap: 50px;
+        }
+
+        .social-links i.fa-brands.fa-whatsapp {
+        font-size: 25px;
+        color: #00ff33;
+        gap: 50px;
+        }
+
+        .social-links i.fa-brands.fa-github {
+        font-size: 25px;
+        color: #27345f;
+        gap: 50px;
+        }
+
+        .social-links a:hover {
+        color: #f04450;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Calculator Showcase</h1>
+
+    <div class="calculator">
+
+        <div class="display">0</div>
+
+        <div class="buttons">
+
+            <button>C</button>
+            <button>%</button>
+            <button>+/-</button>
+            <button>X</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+
+            <button>0</button>
+            <button>.</button>
+            <button class="equal">=</button>
+
+        </div>
+
+    </div>
+
+        <hr class="bottom-line">
+
+        <h2 class="created">Created by .....</h2>
+
+    <div class="social-links">
+
+        <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram">Instagram</i>
+        </a>
+
+    <a href="https://www.whatsapp.com/">
+        <i class="fa-brands fa-whatsapp">WhatsApp</i>
+    </a>
+
+    <a href="https://github.com/">
+        <i class="fa-brands fa-github">GitHub</i>
+    </a>
+</body>
+</html>
